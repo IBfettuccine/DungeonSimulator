@@ -8,8 +8,6 @@ public abstract class Hero
     public abstract int attack();
     public abstract int damage();
 
-    public abstract void rest();
-
     public int getHp()
     {
         return this.hp;

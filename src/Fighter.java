@@ -10,13 +10,12 @@ public class Fighter extends Hero{
         return (int) (Math.random() * 10) + 4;
     }
 
-    @Override
-    public void rest() {
+    public void rest() throws Exception {
         this.hp += (int) (Math.random() * 10) + 1;
         if(this.hp > 12) {
             this.hp = 12;
         }
-        System.out.println(this.name + " has taken a short rest and recovered some HP. " + this.name + " now has " + this.hp + " HP.");
+        ChatGPTRequest.askChatGPT(this.name + " has taken a short rest and recovered some HP. " + this.name + " now has " + this.hp + " HP.");
     }
 
     public Fighter()
