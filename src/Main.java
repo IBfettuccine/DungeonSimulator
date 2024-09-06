@@ -82,7 +82,7 @@ public class Main {
         }
     }
 
-    public static String yesOrNo(String question) throws Exception {
+    public static String yesOrNo(String question) {
         Scanner sc = new Scanner(System.in);
         String answer;
         System.out.println(question);
